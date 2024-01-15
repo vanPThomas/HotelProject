@@ -1,0 +1,50 @@
+﻿<Window x:Class="AddActivity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddActivity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="OrganisationId" Margin="5"/>
+        <Label Grid.Row="0" Grid.Column="2" Content="Date" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Number of Places" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="2" Content="Adult Age" Margin="5"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Adult Tarif" Margin="5"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="Child Tarif" Margin="5"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Discount" Margin="5"/>
+        <Label Grid.Row="3" Grid.Column="2" Content="Description Name" Margin="5"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Location" Margin="5"/>
+        <Label Grid.Row="4" Grid.Column="2" Content="Duration" Margin="5"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Description" Margin="5"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="IdTextBox" Margin="5" VerticalAlignment="Center" />
+        <DatePicker Grid.Row="0" Grid.Column="3" Name="DatePicker" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="1" Grid.Column="1" Name="NumberOfPlacesTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="1" Grid.Column="3" Name="AdultAgeTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="1" Name="AdultTarifTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="3" Name="ChildTarifTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="1" Name="DiscountTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="3" Name="DescriptionNameTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="4" Grid.Column="1" Name="LocationTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="4" Grid.Column="3" Name="DurationTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="5" Grid.Column="1" Name="DescriptionTextBox" Margin="5" VerticalAlignment="Center" />
+        <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Name="AddButton" Click="AddButton_Click" Content="Add"/>
+    </Grid>
+</Window>

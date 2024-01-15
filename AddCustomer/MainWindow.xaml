@@ -1,0 +1,60 @@
+﻿<Window x:Class="AddCustomer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddCustomer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Customer" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="0" Content="Id" Margin="5"/>
+        <Label Grid.Row="1" Grid.Column="2" Content="City" Margin="5"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Name" Margin="5"/>
+        <Label Grid.Row="2" Grid.Column="2" Content="Zip" Margin="5"/>
+        <Label Grid.Row="3" Grid.Column="0" Content="Email" Margin="5"/>
+        <Label Grid.Row="3" Grid.Column="2" Content="Street" Margin="5"/>
+        <Label Grid.Row="4" Grid.Column="0" Content="Phone" Margin="5"/>
+        <Label Grid.Row="4" Grid.Column="2" Content="House number" Margin="5"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="Member" Margin="5"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="MemberName" Margin="5"/>
+        <Label Grid.Row="6" Grid.Column="2" Content="MemberBirthday" Margin="5"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="IdTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="1" Grid.Column="3" Name="CityTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="1" Name="NameTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="2" Grid.Column="3" Name="ZipTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="1" Name="EmailTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="3" Name="StreetTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="4" Grid.Column="1" Name="PhoneTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="4" Grid.Column="3" Name="HouseNumberTextBox" Margin="5" VerticalAlignment="Center" />
+        <TextBox Grid.Row="6" Grid.Column="1" Name="MemberNameTextBox" Margin="5" VerticalAlignment="Center" />
+        <DatePicker Grid.Row="6" Grid.Column="3" Name="DatePicker" Margin="5" VerticalAlignment="Center" />
+        <DataGrid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="4" Margin="5" Name="MemberDataGrid"/>
+        <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Name="AddCustomerButton" Click="AddCustomerButton_Click" Content="AddCustomer"/>
+        <Button Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Name="AddMemberButton" Click="AddMemberButton_Click" Content="AddMember"/>
+        <Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Name="FinishCustomerButton" Click="FinishCustomerButton_Click" Content="FinishCustomer"/>
+        <Button Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Name="UpdateCustomerButton" Click="UpdateCustomerButton_Click" Content="UpdateCustomer"/>
+        <Button Grid.Row="9" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Name="GetCustomerButton" Click="GetCustomerButton_Click" Content="GetCustomer"/>
+        <Button Grid.Row="10" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Name="DeleteCustomerButton" Click="DeleteCustomerButton_Click" Content="DeleteCustomer"/>
+    </Grid>
+</Window>

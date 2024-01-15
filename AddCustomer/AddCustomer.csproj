@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hotel.Domain\Hotel.Domain.csproj" />
+    <ProjectReference Include="..\Hotel.Persistence\Hotel.Persistence.csproj" />
+    <ProjectReference Include="..\Hotel.Util\Hotel.Util.csproj" />
+  </ItemGroup>
+
+</Project>
